@@ -1,0 +1,171 @@
+/* ==========================================================================
+   HTML5 Boilerplate styles - h5bp.com (generated via initializr.com)
+   ========================================================================== */
+
+html,button,input,select,textarea{color:#222}body{font-size:1em;line-height:1.4}::-moz-selection{background:#b3d4fc;text-shadow:none}::selection{background:#b3d4fc;text-shadow:none}hr{display:block;height:1px;border:0;border-top:1px solid #ccc;margin:1em 0;padding:0}img{vertical-align:middle}fieldset{border:0;margin:0;padding:0}textarea{resize:vertical}.chromeframe{margin:0.2em 0;background:#ccc;color:#000;padding:0.2em 0}
+
+/* ==========================================================================
+   TASK LIST STYLES
+   ========================================================================== */
+
+/* ============= */
+/* SHARED STYLES */
+/* ============= */
+
+/* Generic Button Style */
+.button {
+    display: inline-block;
+    background-color: #222; color: #fff;
+    text-decoration: none; font-weight: bold;
+    padding: 0.5em 1em;
+    border: none;
+    text-shadow: 0 -1px 0 rgba(0,0,0,0.2);
+}
+
+/* ========= */
+/* TASK LIST */
+/* ========= */
+
+.tasks {
+    margin: 2em 2em 100px;
+}
+
+/* =============== */
+/* TASK LIST ITEMS */
+/* =============== */
+
+.task-item {
+    margin-bottom: 1em; padding-bottom: 1em;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    -moz-transition: border 0.5s;
+    -webkit-transition: border 0.5s;
+    transition: border 0.5s;
+}
+
+    .task-item:hover {
+        border-bottom: 1px solid #ccc;
+    }
+
+/* Task Item Name */
+.task-item-name {
+    display: inline-block;
+    width: 80%;
+    font-weight: bold;
+}
+
+/* Remove Task Item */
+.task-item-remove {
+    display: inline-block;
+    width: 20%;
+    text-align: right;
+    position: absolute; top: 0; right: 0;
+}
+
+.task-item-remove .button {
+    background-color: #aa0000;
+    font-size: 0.6em;
+    text-transform: uppercase;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+    .task-item-remove .button:hover {
+        background-color: #cc0000;
+    }
+
+/* ========== */
+/* TASK ADDER */
+/* ========== */
+
+.item-adder {
+    position: fixed; bottom: 0;
+    width: 100%;
+    background: #eee;
+    -moz-box-sizing: border-box; box-sizing: border-box;
+    box-shadow: 0 0 5px rgba(0,0,0,0.3);
+    padding: 1em;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+}
+
+    .item-adder:hover {
+        background: #ddd;
+        box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    }
+
+.item-adder input {
+    padding: 0.5em 1em; margin-left: 1em;
+    display: inline-block;
+    border: 1px solid #ccc;
+    width: 80%;
+    -moz-box-sizing: border-box; box-sizing: border-box;
+    float: left;
+    -webkit-appearance: none; border-radius: 0;
+}
+
+.add-item.button {
+    border: none;
+    background: #008888;
+    width: auto;
+    float: right;
+    width: 17%;
+}
+
+.item-adder input:first-child {
+    margin-left: 0;
+}
+
+/* ================================== */
+/* FEEDBACK MESSAGES & ERROR MESSAGES */
+/* ================================== */
+
+/* Feedback Messages */
+
+.no-items {
+    color: #ccc;
+    font-style: italic;
+}
+
+.tasks-complete {
+    color: #666;
+    font-style: normal;
+    font-weight: bold;
+}
+
+/* Item Adder Errors */
+
+.item-adder input.error {
+    background: #ffeeee;
+    border: 1px solid #aa0000;
+}
+
+.error::-webkit-input-placeholder {
+   color: #aa0000;
+}
+
+.error:-moz-placeholder {
+   color: #aa0000;
+}
+
+.error::-moz-placeholder {
+   color: #aa0000;
+}
+
+.error:-ms-input-placeholder {
+   color: #aa0000;
+}
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+@media only screen and (max-width: 35em){.tasks{margin-bottom:200px}.add-item.button,.item-adder input{float:none;width:100%;margin:1em 0 0}.item-adder input:first-child{margin-top:0}}
+
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+.ir{background-color:transparent;border:0;overflow:hidden;*text-indent:-9999px}.ir:before{content:"";display:block;width:0;height:150%}.hidden{display:none !important;visibility:hidden}.visuallyhidden{border:0;clip:rect(0 0 0 0);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px}.visuallyhidden.focusable:active,.visuallyhidden.focusable:focus{clip:auto;height:auto;margin:0;overflow:visible;position:static;width:auto}.invisible{visibility:hidden}.clearfix:before,.clearfix:after{content:" ";display:table}.clearfix:after{clear:both}.clearfix{*zoom:1}
